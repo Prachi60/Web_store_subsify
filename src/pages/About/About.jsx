@@ -3,7 +3,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import Homedelivery from "../../assets/Homedelivery.png";
+import Homedelivery from "../../assets/HomeDelivery.png";
 import onlineShopping from "../../assets/onlineShopping.png";
 import "./About.css";
 
