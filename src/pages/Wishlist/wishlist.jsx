@@ -132,11 +132,9 @@ const Wishlist = () => {
                   <div className="card p-2 shadow-sm h-100">
                     <img
                       // src={`${import.meta.env.VITE_API_URL}${product.image}`}
-                       src={
-    product.image?.startsWith("http")
-      ? product.image
-      : `${import.meta.env.VITE_API_URL}${product.image}`
-  }
+                       src={product.image}
+    
+  
                       alt={product.name}
                       className="card-img-top"
                       style={{ height: "200px", objectFit: "cover" }}

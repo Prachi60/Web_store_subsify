@@ -70,11 +70,7 @@ const dispatch = useDispatch();
             <div className="text-center">
               <img
                 // src={`${import.meta.env.VITE_API_URL}${product.image}`}
-                 src={
-    product.image?.startsWith("http")
-      ? product.image
-      : `${import.meta.env.VITE_API_URL}${product.image}`
-  }
+                 src={product.image}
                 alt={product.name}
                 className="img-fluid rounded"
                 style={{ maxHeight: "350px", objectFit: "cover" }}

@@ -101,11 +101,8 @@ const Card = ({ product }) => {
       <Link to={`/product/${product._id}`}  className="text-decoration-none text-dark">
       <div className="text-center p-2">
         <img
-          src={
-    product.image?.startsWith("http")
-      ? product.image
-      : `${import.meta.env.VITE_API_URL}${product.image}`
-  }
+          src={product.image}
+   
           alt={product.name}
           className="img-fluid rounded-3"
           style={{ width: "180px", height: "150px", objectFit: "cover" }}
