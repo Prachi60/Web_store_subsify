@@ -1,0 +1,23 @@
+
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .card img {
+    height: 200px !important;
+  }
+}
+@media (max-width: 576px) {
+  .card img {
+    height: 180px !important;
+  }
+}
+@media (max-width: 420px) {
+  .row-cols-xs-1 > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

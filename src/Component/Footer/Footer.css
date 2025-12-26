@@ -1,0 +1,11 @@
+
+footer a:hover {
+  color: red !important;
+}
+footer .text-secondary:hover {
+  color: red !important;
+  cursor: pointer;
+}
+footer img {
+  cursor: pointer;
+}

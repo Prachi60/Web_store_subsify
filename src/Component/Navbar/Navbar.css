@@ -1,0 +1,17 @@
+
+
+.top-100 {
+  top: 100% !important;
+}
+
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #7F7FD5, #86A8E7, #91EAE4);
+}
+
+ .input-group .form-control:focus{
+box-shadow: none !important;
+outline: none !important;
+border-color: inherit !important;
+  
+}

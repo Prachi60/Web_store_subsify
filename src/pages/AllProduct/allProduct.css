@@ -1,0 +1,14 @@
+
+@media (max-width: 768px) {
+  .position-fixed.start-0 {
+    left: 0 !important;
+    transition: left 0.3s ease;
+  }
+}
+
+.form-check,.form-check-input:focus{
+  outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+    border: none !important;
+}

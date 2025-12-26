@@ -1,0 +1,11 @@
+
+.text-danger:hover {
+  color: red !important;
+  cursor: pointer;
+}
+
+
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important;
+}

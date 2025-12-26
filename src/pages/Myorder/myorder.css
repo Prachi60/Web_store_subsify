@@ -1,0 +1,8 @@
+.order_summary_my_order{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.my_order a{
+    text-decoration: none;
+    color: inherit;
+}
