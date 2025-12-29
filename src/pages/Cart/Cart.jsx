@@ -195,7 +195,7 @@ const Cart = () => {
   };
   const durationDays = getDurationDays(duration);
 
-  const perDayPrice = cartItems.reduce((sum, item) => {
+  const perDayPrice = (cartItems||[]).reduce((sum, item) => {
     const price = item.product?.price || item.price || 0;
     return sum + price * (item.quantity || 1);
   }, 0);
@@ -265,7 +265,8 @@ const Cart = () => {
                               // src={`${import.meta.env.VITE_API_URL}${
                               //   prod.image
                               // }`}
-                               src={item.product?.image?.[0]}
+                             src={item.product?.image?.[0] || "/no-image.png"}
+
 
                               alt="product"
                               style={{
