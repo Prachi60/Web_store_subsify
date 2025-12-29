@@ -255,6 +255,7 @@ const Cart = () => {
                   <tbody>
                     {cartItems.map((item) => {
                       const prod = item;
+                    
                       const price = prod.price;
                       const qty = item.quantity || 1;
 
@@ -265,7 +266,8 @@ const Cart = () => {
                               // src={`${import.meta.env.VITE_API_URL}${
                               //   prod.image
                               // }`}
-                             src={item.product?.image?.[0] || "/no-image.png"}
+                            //  src={item.product?.image?.[0] || "/no-image.png"}
+                            src={prod.image}
 
 
                               alt="product"
