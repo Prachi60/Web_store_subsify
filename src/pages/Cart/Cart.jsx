@@ -265,7 +265,7 @@ const Cart = () => {
                               // src={`${import.meta.env.VITE_API_URL}${
                               //   prod.image
                               // }`}
-                               src={product.image}
+                               src={item.product?.image?.[0]}
 
                               alt="product"
                               style={{
