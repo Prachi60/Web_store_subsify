@@ -21,7 +21,7 @@ const Cart = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
 
-  const { cartItems, orderSummary, subscriptionType, duration, isSubscribed } =
+  const { cartItems=[], orderSummary, subscriptionType, duration, isSubscribed } =
     useSelector((state) => state.cart);
 
   const [subscriptionId, setSubscriptionId] = useState(null);
@@ -77,7 +77,7 @@ const Cart = () => {
 
   const fetchTotal = async () => {
     try {
-      if (!token || cartItems.length === 0) return;
+      if (!token || cartItems?.length === 0) return;
 
       const cartItemIds = cartItems.map((item) => item.cartItemId);
 
@@ -99,7 +99,7 @@ const Cart = () => {
   };
 
   useEffect(() => {
-    if (subscriptionType && duration && cartItems.length > 0) {
+    if (subscriptionType && duration && cartItems?.length > 0) {
       fetchTotal();
     }
   }, [cartItems, subscriptionType, duration]);
@@ -230,7 +230,7 @@ const Cart = () => {
       <div className="container my-4">
         <h2 className="mb-4">Your Cart</h2>
 
-        {cartItems.length === 0 ? (
+        {cartItems?.length === 0 ? (
           <div className="d-flex justify-content-center align-items-center flex-column">
             <h4 className="text-center my-5">No Items in Cart</h4>
             <Link to="/">
@@ -370,7 +370,7 @@ const Cart = () => {
                   <button
                     className="btn btn-danger w-100 mb-2"
                     onClick={() => {
-                      if (cartItems.length === 0) {
+                      if (cartItems?.length === 0) {
                         toast.error("Cart is empty");
                         return;
                       }
