@@ -105,7 +105,7 @@ const AllProduct = () => {
                 className="form-check-input bg-secondary"
                 type="checkbox"
                 onChange={handleCategoryChange}
-                value="6944e0b72adf6409332cb399"
+                value="694cf7b6af0f0c7ea3dc3986"
               />
               <label className="form-check-label">Food Subscription</label>
             </div>
@@ -115,7 +115,7 @@ const AllProduct = () => {
                 className="form-check-input  bg-secondary"
                 type="checkbox"
                 onChange={handleCategoryChange}
-                value="6943e4b1b2bb6550a5ccdced"
+                value="694cee1a66fa8c9cf35dcfaa"
               />
               <label className="form-check-label">Dairy Products</label>
             </div>
@@ -125,7 +125,7 @@ const AllProduct = () => {
                 className="form-check-input  bg-secondary"
                 type="checkbox"
                 onChange={handleCategoryChange}
-                value="6944d5e32adf6409332cb1f2"
+                value="694cf748af0f0c7ea3dc3963"
               />
               <label className="form-check-label">Home Essentials</label>
             </div>
