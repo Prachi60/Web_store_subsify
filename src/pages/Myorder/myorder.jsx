@@ -113,7 +113,7 @@ const MyOrders = () => {
                         <div className="col-md-6">
                           <p><strong>Payment Mode:</strong> {order.paymentMode}</p>
                           <p><strong>Address:</strong> {order.address??"N/A"}</p>
-                          <p><strong>Duration:</strong> {order.subscription?.duration??"N/A"}</p>
+                          <p><strong>No. of Deliveries</strong> {order.subscription?.duration??"N/A"}</p>
                           <p><strong>ShiftTime:</strong> {order.subscription?.shiftTime??"N/A"}</p>
                           
                         </div>

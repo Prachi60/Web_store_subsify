@@ -240,16 +240,20 @@ const Order = () => {
     if (duration === "7days") return 7;
     if (duration === "15days") return 15;
     if (duration === "30days") return 30;
+     if(duration==="4days") return 4;
+  if(duration==="8days") return 8;
+  if(duration==="15days") return 15;
 
-    if (duration === "1week") return 7;
-    if (duration === "2week") return 14;
-    if (duration === "3week") return 21;
-    if (duration === "4week") return 28;
 
-    if (duration === "1month") return 30;
-    if (duration === "2month") return 60;
-    if (duration === "3month") return 90;
-    if (duration === "6month") return 180;
+    if (duration === "1week") return 1;
+    if (duration === "2week") return 2;
+    if (duration === "3week") return 3;
+    if (duration === "4week") return 4;
+
+    if (duration === "1month") return 1;
+    if (duration === "2month") return 2;
+    if (duration === "3month") return 3;
+    if (duration === "6month") return 4;
 
     return 0;
   };
@@ -261,6 +265,8 @@ const Order = () => {
   }, 0);
 
   const calculatedSubtotal = perDayPrice * durationDays;
+   console.log(calculatedSubtotal,"total");
+   console.log("duration days",durationDays);
 
   return (
     <div className="container_fluid bg-white">
@@ -321,7 +327,7 @@ const Order = () => {
             {durationDays > 0 && (
               <div className="d-flex justify-content-between mb-2">
                 <span>
-                  Duration
+                  No. of Deliveries
                   <small className="text-muted"> ( in days)</small>
                 </span>
                 <span> {durationDays}</span>
@@ -331,6 +337,8 @@ const Order = () => {
             <div className="d-flex justify-content-between mb-2">
               <span>Subtotal</span>
               <span>₹{calculatedSubtotal}</span>
+             
+              
             </div>
 
             <div className="d-flex justify-content-between text-success">
